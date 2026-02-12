@@ -532,7 +532,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextComponent: {fileID: 276161955}
-  Lines: []
+  Lines:
+  - test
+  - test 1
   TextSpeed: 0.3
 --- !u!1 &1903876130
 GameObject:
