@@ -8,6 +8,13 @@ using TMPro;
 using UnityEditor;
 public class TitleScreenManager : MonoBehaviour
 {
+    void Update()
+    {
+        if(Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
     public void QuitGame()
     {
         //UnityEditor.EditorApplication.isPlaying = false;
