@@ -334,7 +334,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 50}
+  m_SizeDelta: {x: 6, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387062760
 MonoBehaviour:
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2132119989}
   playerCam: {fileID: 833999689}
-  mouseSensitivity: 2000
+  mouseSensitivity: 1200
   xRot: 0
   minY: -90
   maxY: 90
@@ -2167,7 +2167,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 10}
+  m_SizeDelta: {x: 30, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796545359
 MonoBehaviour:
@@ -2657,7 +2657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 3
 --- !u!114 &2132119993
 MonoBehaviour:
   m_ObjectHideFlags: 0
