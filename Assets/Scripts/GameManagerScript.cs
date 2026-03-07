@@ -29,6 +29,7 @@ public class GameManagerScript : MonoBehaviour
         note.SetActive(true);
         seated = false;
         newstop = false;
+        this.gameObject.GetComponent<experimentalaudio>().audiomanager("music", 0);
     }
 
     // Update is called once per frame
