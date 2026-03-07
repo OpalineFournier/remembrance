@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2848bd4aa9bf634bb67576960380c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HappyAcresButton: {fileID: 0}
+  HappyAcresButton: {fileID: 627774671}
   index: 3
 --- !u!1 &983320464
 GameObject:
