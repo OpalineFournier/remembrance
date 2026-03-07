@@ -293,9 +293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fd2d2761d009b4b8fe078538d6ffe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcVoicelines: []
-  ambience: []
-  music: []
+  npcVoicelines:
+  - {fileID: 0}
+  ambience:
+  - {fileID: 0}
+  music:
+  - {fileID: 4724667934820636853, guid: eef738f0a89bcb143a9478b49234c587, type: 3}
 --- !u!1 &387062758
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,6 +788,7 @@ GameObject:
   - component: {fileID: 833999689}
   - component: {fileID: 833999688}
   - component: {fileID: 833999690}
+  - component: {fileID: 833999691}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -877,6 +881,14 @@ MonoBehaviour:
   minY: -90
   maxY: 90
   canmovecam: 0
+--- !u!81 &833999691
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833999686}
+  m_Enabled: 1
 --- !u!1 &838140953
 GameObject:
   m_ObjectHideFlags: 0
