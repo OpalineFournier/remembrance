@@ -11,7 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1stNeighborhood.unity
     guid: 1e207845045ed8c468fbef045a5508fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/2ndNeighborhood.unity
     guid: 9ed21703ddbc148ec8d48948438e3981
+  - enabled: 1
+    path: Assets/Scenes/BusStopSelection.unity
+    guid: 6cbc341b54c8aac43b66cde533c96e53
+  - enabled: 1
+    path: Assets/Scenes/HappyAcres.unity
+    guid: fb83558a79b2024438d6722df9a240dc
+  - enabled: 1
+    path: Assets/Scenes/Ratsville.unity
+    guid: 269415511bc786b448c945a104f61011
+  - enabled: 1
+    path: Assets/Scenes/VampireVillage.unity
+    guid: 6c82bff91c20d364887176920327ac93
   m_configObjects: {}
