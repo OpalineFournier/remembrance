@@ -11,6 +11,7 @@ public class CameraScript : MonoBehaviour
     public float xRot = 0f;
     public float minY = -90f;
     public float maxY = 90f;
+    public bool canmovecam;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +26,10 @@ public class CameraScript : MonoBehaviour
     void Update()
     {
         transform.position = playerCam.position;
-        MouseLook();
-       
+        canmovecam = GameObject.Find("GameManager").GetComponent<GameManagerScript>().permittedcammove;
+        if(canmovecam){
+            MouseLook();
+        }
     }
     void MouseLook()
     {
