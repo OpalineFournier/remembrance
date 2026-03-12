@@ -5,7 +5,8 @@ using TMPro;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-   
+    public bool switchscene;
+    public int whatscene;
 
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
@@ -79,6 +80,10 @@ public class NewBehaviourScript : MonoBehaviour
         {
 
             gameObject.SetActive(false);
+            if(switchscene)
+            {
+                GameObject.Find("SwitchSceneManager").GetComponent<TitleScreenManager>().LoadScene(whatscene);
+            }
         }
     }
 }
