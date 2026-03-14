@@ -20,13 +20,16 @@ public class GameManagerScript : MonoBehaviour
 
     public bool newstop;
 
+    public bool permittedcammove;
     // Start is called before the first frame update
     void Start()
     {
+        permittedcammove = true;
         noteUp = false;
-        note.SetActive(false);
+        note.SetActive(true);
         seated = false;
         newstop = false;
+        this.gameObject.GetComponent<experimentalaudio>().audiomanager("music", 0);
     }
 
     // Update is called once per frame
