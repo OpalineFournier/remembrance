@@ -84,6 +84,10 @@ public class NewBehaviourScript : MonoBehaviour
             {
                 GameObject.Find("SwitchSceneManager").GetComponent<TitleScreenManager>().LoadScene(whatscene);
             }
+            else
+            {
+             gameObject.SetActive(false);
+             }
         }
     }
 }
