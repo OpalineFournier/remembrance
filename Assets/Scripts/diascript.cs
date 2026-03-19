@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class diascript : MonoBehaviour
 {
     public bool switchscene;
     public int whatscene;
