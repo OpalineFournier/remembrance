@@ -25,7 +25,7 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         permittedcammove = true;
-        noteUp = false;
+        noteUp = true;
         note.SetActive(true);
         seated = false;
         newstop = false;
