@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StopScript1 : MonoBehaviour
+public class StopScript3 : MonoBehaviour
 {
-	public Button NeighborhoodOne;
+	public Button NeighborhoodThree;
 	public int index;
 	void Start()
 	{
-		Button btn = NeighborhoodOne.GetComponent<Button>();
+		Button btn = NeighborhoodThree.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
 	}
 

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 85419311}
   - component: {fileID: 85419310}
   - component: {fileID: 85419309}
+  - component: {fileID: 85419312}
   m_Layer: 5
   m_Name: 3rdNeighborhood
   m_TagString: Untagged
@@ -243,6 +244,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85419307}
   m_CullTransparentMesh: 1
+--- !u!114 &85419312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85419307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9597e65ad86e028409c21440fcd1a867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeighborhoodThree: {fileID: 85419309}
+  index: 4
 --- !u!1 &831078224
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +697,7 @@ GameObject:
   - component: {fileID: 1079456611}
   - component: {fileID: 1079456610}
   - component: {fileID: 1079456609}
+  - component: {fileID: 1079456612}
   m_Layer: 5
   m_Name: 2ndNeighborhood
   m_TagString: Untagged
@@ -791,6 +807,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079456607}
   m_CullTransparentMesh: 1
+--- !u!114 &1079456612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079456607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952b9d0b37afd354a9b81db0aba68101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeighborhoodTwo: {fileID: 1079456609}
+  index: 3
 --- !u!1 &1236441049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397b4322f61ebdd43b23d2a3cc6dbed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NeighborhoodOne: {fileID: 2082226120}
+  index: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
