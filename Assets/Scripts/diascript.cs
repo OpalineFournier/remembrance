@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class diascript : MonoBehaviour
 {
-   
+    public bool switchscene;
+    public int whatscene;
 
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
@@ -20,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-  
+ 
 
         textComponent.text = string.Empty;
         startDialogue();
@@ -79,6 +80,14 @@ public class NewBehaviourScript : MonoBehaviour
         {
 
             gameObject.SetActive(false);
+            if(switchscene)
+            {
+                GameObject.Find("SwitchSceneManager").GetComponent<TitleScreenManager>().LoadScene(whatscene);
+            }
+            else
+            {
+             gameObject.SetActive(false);
+             }
         }
     }
 }
