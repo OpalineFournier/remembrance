@@ -27,16 +27,12 @@ public class PlayerDiaActivation : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.name == "Julissa_NPC")
+        if (collision.gameObject.tag == "Character")
         {
             Dia.SetActive(true);
 
         }
-        if (collision.gameObject.name == "Julissa_NPC2")
-        {
-            Dia.SetActive(true);
-
-        }
+       
 
 
 
