@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e671738a67a74b54939184403763b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 2
 --- !u!1 &1452255135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,6 +2370,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dia: {fileID: 455540540}
   Dia2: {fileID: 0}
+  Dia3: {fileID: 0}
+  Dia4: {fileID: 0}
+  Dia5: {fileID: 0}
+  Dia6: {fileID: 0}
+  Dia7: {fileID: 0}
+  Dia8: {fileID: 0}
+  Dia9: {fileID: 0}
+  Dia10: {fileID: 0}
   playerCam: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
