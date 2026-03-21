@@ -980,8 +980,9 @@ GameObject:
   - component: {fileID: 865379375}
   - component: {fileID: 865379374}
   - component: {fileID: 865379376}
+  - component: {fileID: 865379377}
   m_Layer: 0
-  m_Name: Julissa_NPC
+  m_Name: Jonathan_NPC
   m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1028,7 +1029,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13adf653a8d240649987f800291af887, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b037f64491bcee4887cc34caeb2b0fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1076,6 +1077,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 12.8, y: 12.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &865379377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865379373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425978401e0fede4b99ca748808fa4e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numOfSprites: 2
+  Jul: {fileID: 865379373}
+  SpriteOne: {fileID: 21300000, guid: 3b037f64491bcee4887cc34caeb2b0fb, type: 3}
+  SpriteTwo: {fileID: 21300000, guid: 6813aac966e67564d9934c854b626f9c, type: 3}
 --- !u!1 &1131453201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,7 +2083,7 @@ GameObject:
   - component: {fileID: 1961090143}
   - component: {fileID: 1961090144}
   m_Layer: 0
-  m_Name: Julissa_NPC2
+  m_Name: Jonathan_NPC2
   m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
