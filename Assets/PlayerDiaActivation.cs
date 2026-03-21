@@ -7,6 +7,14 @@ public class PlayerDiaActivation : MonoBehaviour
 {
     public GameObject Dia;
     public GameObject Dia2;
+    public GameObject Dia3;
+    public GameObject Dia4;
+    public GameObject Dia5;
+    public GameObject Dia6;
+    public GameObject Dia7;
+    public GameObject Dia8;
+    public GameObject Dia9;
+    public GameObject Dia10;
     public Transform playerCam;
     public GameObject Player;
     // Start is called before the first frame update
@@ -37,7 +45,11 @@ public class PlayerDiaActivation : MonoBehaviour
             Dia.SetActive(true);
 
         }
+        if (collision.gameObject.name == "Tutorial_Instruction1")
+        {
+            Dia2.SetActive(true);
 
+        }
 
 
     }
