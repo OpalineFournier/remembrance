@@ -16,5 +16,11 @@ EditorBuildSettings:
     guid: 1e207845045ed8c468fbef045a5508fd
   - enabled: 1
     path: Assets/Scenes/2ndNeighborhood.unity
-    guid: fb83558a79b2024438d6722df9a240dc
+    guid: 5fc6ca7fe77950445a126ac1e02d4cae
+  - enabled: 1
+    path: Assets/Scenes/3rdNeighborhood.unity
+    guid: dba1fc0b157d6d44fb31d0caa5fff0f7
+  - enabled: 1
+    path: Assets/Scenes/BusStopSelection.unity
+    guid: 6cbc341b54c8aac43b66cde533c96e53
   m_configObjects: {}
