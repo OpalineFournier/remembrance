@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogueObject
   - Character
+  - ViewBlocker
   layers:
   - Default
   - TransparentFX
