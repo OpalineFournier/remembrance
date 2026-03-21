@@ -20,7 +20,7 @@ public class inmotionbus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(bustravelatindex == GameObject.Find("DIalouge Box").GetComponent<diascript>().index)
+        if(bustravelatindex == GameObject.Find("Dialouge Box").GetComponent<diascript>().index)
         {
             thisanim.SetBool("inmotion", true);
             source.PlayOneShot(clip);
