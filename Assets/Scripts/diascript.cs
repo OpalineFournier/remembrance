@@ -21,7 +21,7 @@ public class diascript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-  
+ 
 
         textComponent.text = string.Empty;
         startDialogue();
