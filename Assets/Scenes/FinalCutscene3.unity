@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchscene: 1
-  whatscene: 0
+  whatscene: 7
   textComponent: {fileID: 1055229665}
   nameComponent: {fileID: 809181773}
   lines:
@@ -673,8 +673,9 @@ MonoBehaviour:
   names:
   - Me
   - Me
+  - Me
   textSpeed: 0.1
-  index: 7
+  index: 0
 --- !u!114 &1408500273
 MonoBehaviour:
   m_ObjectHideFlags: 0
