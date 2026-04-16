@@ -247,7 +247,7 @@ MonoBehaviour:
   timer: 0
   indexvalfadeblack: 00000000020000000300000004000000
   indexvalfadewhite: 01000000
-  indexvalfadeout: 0a0000000b0000000c000000
+  indexvalfadeout: 0a0000000b0000000c0000000d000000
 --- !u!212 &519269255
 SpriteRenderer:
   m_ObjectHideFlags: 0

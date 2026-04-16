@@ -21,6 +21,12 @@ public class GameManagerScript : MonoBehaviour
     public bool newstop;
 
     public bool permittedcammove;
+    //Pause Menu variables (WIP)
+
+    public bool ispaused;
+    
+    public GameObject pausemenu;
+    public GameObject pausemenuprefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +53,15 @@ public class GameManagerScript : MonoBehaviour
                 noteUp = false;
                 note.SetActive(false);
                 timerF = 0;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if(ispaused){
+                ispaused = false;
+            }
+            else{
+                ispaused = true;
             }
         }
 
@@ -85,6 +100,16 @@ public class GameManagerScript : MonoBehaviour
         if (!atDest)
         {
             newstop = true;
+        }
+        if(ispaused && pausemenu == null)
+        {
+            permittedcammove = false;
+            pausemenu = Instantiate(pausemenuprefab, GameObject.Find("Note (1)").GetComponent<Transform>());
+        }
+        else if(!ispaused && pausemenu != null)
+        {
+            permittedcammove = true;
+            Destroy(pausemenu);
         }
     }
 }

@@ -8,6 +8,7 @@ public class CameraScript : MonoBehaviour
     public Transform player;
     public Transform playerCam;
     public float mouseSensitivity = 100f;
+    public float mouseSensMultiplier = 1f;
     public float xRot = 0f;
     public float minY = -90f;
     public float maxY = 90f;
@@ -28,13 +29,17 @@ public class CameraScript : MonoBehaviour
         transform.position = playerCam.position;
         canmovecam = GameObject.Find("GameManager").GetComponent<GameManagerScript>().permittedcammove;
         if(canmovecam){
+            Cursor.lockState = CursorLockMode.Locked;
             MouseLook();
+        }
+        else{
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     void MouseLook()
     {
-        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity;
+        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity * mouseSensMultiplier;
+        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity * mouseSensMultiplier;
 
         xRot -= mouseY;
         xRot = Mathf.Clamp(xRot, minY, maxY);
