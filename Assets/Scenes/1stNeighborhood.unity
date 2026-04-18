@@ -554,6 +554,7 @@ MonoBehaviour:
   pausemenu: {fileID: 0}
   pausemenuprefab: {fileID: 4401146977307491194, guid: 2368e0b8f4146a446bdb26a65bd451ae, type: 3}
   pauseAnimator: {fileID: 0}
+  sensslider: {fileID: 7288628947480862995, guid: 15a7ceff1e5bf004aac3b980f0277314, type: 3}
 --- !u!4 &304712681
 Transform:
   m_ObjectHideFlags: 0
@@ -562,7 +563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304712679}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3284,7 +3285,7 @@ SceneRoots:
   - {fileID: 865379375}
   - {fileID: 1131453205}
   - {fileID: 1454128118}
-  - {fileID: 1226811798}
   - {fileID: 304712681}
+  - {fileID: 1226811798}
   - {fileID: 949036875}
   - {fileID: 1278935440}

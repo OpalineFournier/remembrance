@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7450390414009697530}
   - component: {fileID: 5133358734372833823}
-  - component: {fileID: 8435099272198718871}
+  - component: {fileID: -5245487425811651880}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8435099272198718871
+--- !u!114 &-5245487425811651880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53959ef54bb24144687afbaa042049e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensslide: {fileID: 0}
 --- !u!1 &8740286615019647130
 GameObject:
   m_ObjectHideFlags: 0
