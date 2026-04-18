@@ -29,6 +29,8 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pausemenuprefab;
 
     public Animator pauseAnimator;
+
+    public GameObject sensslider;
     // Start is called before the first frame update
     void Start()
     {
@@ -123,5 +125,9 @@ public class GameManagerScript : MonoBehaviour
                 Destroy(pausemenu);
             }
         }
+    }
+    public void spawnObject()
+    {
+        Instantiate(sensslider);
     }
 }
