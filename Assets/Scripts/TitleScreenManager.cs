@@ -10,10 +10,7 @@ public class TitleScreenManager : MonoBehaviour
 {
     void Update()
     {
-        if(Cursor.lockState == CursorLockMode.Locked)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
+
     }
     public void QuitGame()
     {

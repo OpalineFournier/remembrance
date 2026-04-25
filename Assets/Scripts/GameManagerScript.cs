@@ -27,6 +27,10 @@ public class GameManagerScript : MonoBehaviour
     
     public GameObject pausemenu;
     public GameObject pausemenuprefab;
+
+    public Animator pauseAnimator;
+
+    public GameObject sensslider;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,7 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Note (PLEASE NOTE THIS IS NOT THE CANVAS. DO NOT DISABLE THE CANVAS)
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (noteUp == false)
@@ -55,12 +60,13 @@ public class GameManagerScript : MonoBehaviour
                 timerF = 0;
             }
         }
+        //Pause Menu
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if(ispaused){
+            if(ispaused && pausemenu != null){
                 ispaused = false;
             }
-            else{
+            else if(!ispaused && pausemenu == null){
                 ispaused = true;
             }
         }
@@ -101,15 +107,23 @@ public class GameManagerScript : MonoBehaviour
         {
             newstop = true;
         }
+
+        //pause menu stuff
         if(ispaused && pausemenu == null)
         {
             permittedcammove = false;
             pausemenu = Instantiate(pausemenuprefab, GameObject.Find("Note (1)").GetComponent<Transform>());
+            pauseAnimator = GameObject.Find("PauseMenu(Clone)").GetComponent<Animator>();
+            pauseAnimator.SetBool("ifsettings", false);
         }
         else if(!ispaused && pausemenu != null)
         {
             permittedcammove = true;
-            Destroy(pausemenu);
+            pauseAnimator.SetBool("ifsettings", true);
+            if(pauseAnimator.GetCurrentAnimatorStateInfo(0).IsName("trueAway"))
+            {
+                Destroy(pausemenu);
+            }
         }
     }
 }
