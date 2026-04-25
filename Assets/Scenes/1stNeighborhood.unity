@@ -1407,7 +1407,6 @@ MonoBehaviour:
   player: {fileID: 2132119989}
   playerCam: {fileID: 833999689}
   mouseSensitivity: 1200
-  mouseSensMultiplier: 1
   xRot: 0
   minY: -90
   maxY: 90
@@ -3402,7 +3401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

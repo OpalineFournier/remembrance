@@ -21,16 +21,6 @@ public class GameManagerScript : MonoBehaviour
     public bool newstop;
 
     public bool permittedcammove;
-    //Pause Menu variables (WIP)
-
-    public bool ispaused;
-    
-    public GameObject pausemenu;
-    public GameObject pausemenuprefab;
-
-    public Animator pauseAnimator;
-
-    public GameObject sensslider;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +35,6 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Note (PLEASE NOTE THIS IS NOT THE CANVAS. DO NOT DISABLE THE CANVAS)
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (noteUp == false)
@@ -58,16 +47,6 @@ public class GameManagerScript : MonoBehaviour
                 noteUp = false;
                 note.SetActive(false);
                 timerF = 0;
-            }
-        }
-        //Pause Menu
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if(ispaused && pausemenu != null){
-                ispaused = false;
-            }
-            else if(!ispaused && pausemenu == null){
-                ispaused = true;
             }
         }
 
@@ -106,24 +85,6 @@ public class GameManagerScript : MonoBehaviour
         if (!atDest)
         {
             newstop = true;
-        }
-
-        //pause menu stuff
-        if(ispaused && pausemenu == null)
-        {
-            permittedcammove = false;
-            pausemenu = Instantiate(pausemenuprefab, GameObject.Find("Note (1)").GetComponent<Transform>());
-            pauseAnimator = GameObject.Find("PauseMenu(Clone)").GetComponent<Animator>();
-            pauseAnimator.SetBool("ifsettings", false);
-        }
-        else if(!ispaused && pausemenu != null)
-        {
-            permittedcammove = true;
-            pauseAnimator.SetBool("ifsettings", true);
-            if(pauseAnimator.GetCurrentAnimatorStateInfo(0).IsName("trueAway"))
-            {
-                Destroy(pausemenu);
-            }
         }
     }
 }
