@@ -1061,11 +1061,11 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 168
+    m_CachedPref: -168
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 210.9
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1188,8 +1188,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 64740000e08200009228000000000000b06a000034710000b8710000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 64740000e08200009228000000000000b06a000034710000b87100006e2800005e640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
