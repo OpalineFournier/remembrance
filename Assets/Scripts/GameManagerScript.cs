@@ -126,8 +126,4 @@ public class GameManagerScript : MonoBehaviour
             }
         }
     }
-    public void spawnObject()
-    {
-        Instantiate(sensslider);
-    }
 }
