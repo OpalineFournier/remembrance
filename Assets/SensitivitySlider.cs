@@ -19,6 +19,13 @@ public class SensitivitySlider : MonoBehaviour
     }
     public void spawnobj()
     {
-        Instantiate(sensslide, GameObject.Find("PauseMenu(Clone)").GetComponent<Transform>());
+        if(!(GameObject.Find("Slider(Clone)")))
+        {
+            Instantiate(sensslide, GameObject.Find("PauseMenu(Clone)").GetComponent<Transform>());
+        }
+        else
+        {
+            Destroy(GameObject.Find("Slider(Clone)"));
+        }
     }
 }
