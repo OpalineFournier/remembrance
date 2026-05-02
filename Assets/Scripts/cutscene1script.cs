@@ -20,23 +20,31 @@ public class cutscene1script : MonoBehaviour
     void FixedUpdate()
     {
         timer += Time.fixedDeltaTime;
-        if(this.gameObject.tag == "ViewBlocker")
+        if (this.gameObject.tag == "ViewBlocker")
         {
-            foreach(int i in indexvalfadewhite){
-                if(GameObject.Find("DIalouge Box").GetComponent<diascript>().index == i && timer > .02f){
+            foreach (int i in indexvalfadewhite)
+            {
+                if (GameObject.Find("DIalouge Box").GetComponent<diascript>().index == i && timer > .02f)
+                {
                     this.gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r + .05f, gameObject.GetComponent<SpriteRenderer>().color.g + .05f, gameObject.GetComponent<SpriteRenderer>().color.b + .05f, 1);
                     timer = 0;
                 }
             }
-            else if(GameObject.Find("DIalouge Box").GetComponent<diascript>().index > 1 && GameObject.Find("DIalouge Box").GetComponent<diascript>().index < 7 && timer > .02f)
+            foreach (int i in indexvalfadeblack)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r - .05f, gameObject.GetComponent<SpriteRenderer>().color.g - .05f, gameObject.GetComponent<SpriteRenderer>().color.b - .05f, 1);
-                timer = 0;
+                if (GameObject.Find("DIalouge Box").GetComponent<diascript>().index == i && timer > .02f)
+                {
+                    this.gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r - .05f, gameObject.GetComponent<SpriteRenderer>().color.g - .05f, gameObject.GetComponent<SpriteRenderer>().color.b - .05f, 1);
+                    timer = 0;
+                }
             }
-            else if(GameObject.Find("DIalouge Box").GetComponent<diascript>().index > 7 && timer > .02f)
+            foreach (int i in indexvalfadeout)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r - .05f, gameObject.GetComponent<SpriteRenderer>().color.g - .05f, gameObject.GetComponent<SpriteRenderer>().color.b - .05f, gameObject.GetComponent<SpriteRenderer>().color.a - .05f);
-                timer = 0;
+                if (GameObject.Find("DIalouge Box").GetComponent<diascript>().index == i && timer > .02f)
+                {
+                    this.gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r - .05f, gameObject.GetComponent<SpriteRenderer>().color.g - .05f, gameObject.GetComponent<SpriteRenderer>().color.b - .05f, gameObject.GetComponent<SpriteRenderer>().color.a - .05f);
+                    timer = 0;
+                }
             }
         }
     }
