@@ -7,11 +7,13 @@ public class SpriteSwitcher : MonoBehaviour
     [System.Serializable]
     public class changewithspriteatindex
     {
-        public Sprite sprite;
+        public Sprite sprites;
         public int index;
         public Vector3 scalesize;
     }
     public changewithspriteatindex[] changewithspriteAatindexA;
+    
+    public int activeindex;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +23,16 @@ public class SpriteSwitcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    /*
-        if(changewithspriteAatindexA.scalesize[i] == new Vector3(0f, 0f, 0f))
+        if(GameObject.Find("BlinkingSquare").GetComponent<blinkingscript>().eyesclosed)
         {
-            changewithspriteAatindexA.scalesize[i] = this.gameObject.GetComponent<Transform>().scale;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = this.gameObject.GetComponent<SpriteSwitcher>().changewithspriteAatindexA[activeindex].sprites;
+            if(changewithspriteAatindexA[activeindex].scalesize != new Vector3(0f, 0f, 0f))
+            {
+                this.gameObject.transform.localScale = changewithspriteAatindexA[activeindex].scalesize;
+            }
+
         }
-        */
+        
     }
 
 }
