@@ -8,9 +8,11 @@ public class CameraScript : MonoBehaviour
     public Transform player;
     public Transform playerCam;
     public float mouseSensitivity = 100f;
+    public float mouseSensMultiplier = 1f;
     public float xRot = 0f;
     public float minY = -90f;
     public float maxY = 90f;
+    public bool canmovecam;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +27,19 @@ public class CameraScript : MonoBehaviour
     void Update()
     {
         transform.position = playerCam.position;
-        MouseLook();
-       
+        canmovecam = GameObject.Find("GameManager").GetComponent<GameManagerScript>().permittedcammove;
+        if(canmovecam){
+            Cursor.lockState = CursorLockMode.Locked;
+            MouseLook();
+        }
+        else{
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
     void MouseLook()
     {
-        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity;
+        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity * mouseSensMultiplier;
+        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity * mouseSensMultiplier;
 
         xRot -= mouseY;
         xRot = Mathf.Clamp(xRot, minY, maxY);

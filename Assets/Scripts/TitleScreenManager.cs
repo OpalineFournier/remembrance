@@ -8,6 +8,10 @@ using TMPro;
 using UnityEditor;
 public class TitleScreenManager : MonoBehaviour
 {
+    void Update()
+    {
+
+    }
     public void QuitGame()
     {
         //UnityEditor.EditorApplication.isPlaying = false;

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DialogueObject
+  - Character
+  - ViewBlocker
   layers:
   - Default
   - TransparentFX
