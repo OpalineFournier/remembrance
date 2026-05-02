@@ -247,7 +247,7 @@ MonoBehaviour:
   timer: 0
   indexvalfadeblack: 00000000020000000300000004000000
   indexvalfadewhite: 01000000
-  indexvalfadeout: 0a0000000b0000000c0000000d000000
+  indexvalfadeout: 08000000090000000a0000000b000000
 --- !u!212 &519269255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -771,29 +771,22 @@ MonoBehaviour:
   - It's dark.
   - Now it's too bright.
   - Your eyes don't hurt anymore.
-  - You are sitting on a bench at what appears to be a bus stop.
-  - There is another person there.
-  - You walk towards the person, but they avoid eye contact.
-  - 'You try to spark some interesting conversation, but the person somehow gives
-    you an even weirder look than before. '
-  - They respond, but it sounds like gibberish.
-  - While you try to make out what you heard, you notice something in your pocket.
-  - It feels like a piece of paper.
-  - After unfolding the paper, you can see that it is also gibberish.
-  - Except for what looks like a 52.
-  - When you hand them the note, they take a minute to read it, and their expression
-    goes from concern to another type of concern, but with more pity in it.
-  - They hand it back to you, say some more gibberish, point to the 52 you saw on
-    the note, and point to something else out of view.
-  - They were pointing to the sign for the bus stop.
-  - It also has a 52 on it, along with some other numbers.
-  - They hand you back the note as a bus pulls up.
-  - They then hold up one finger.
-  - They tip their hat to you (was that there before?) and wave goodbye.
-  - Getting on the bus, there are quite a few people around you.
-  - Sitting down, you notice a map on the wall behind you.
-  - Looking at the map, there seems to be one bus line with five stops; not too complicated.
-  - A red light flashes some weird shapes on a sign, and the bus stops.
+  - The smell of a burning cigarette interrupted your subpar slumber.
+  - Looking around, you are sitting on a bench at a bus stop. There is another person
+    there.
+  - 'Walking towards the person, you can see them avoid eye contact. '
+  - 'You try to spark some interesting conversation, but their response sounds like
+    gibberish. '
+  - 'Trying to make out what you heard, you feel something in your pocket, like a
+    piece of paper. '
+  - After unfolding the paper, you can see that it is also unintelligible.
+  - Handing them the note, they begin to read, and their expression changes to pity.
+  - 'Handing it back to you, saying some more gibberish, they point to something
+    out of view. '
+  - They were pointing to the sign for the bus stop, which has a variety of numbers.
+  - They hold up one finger and wave goodbye, tipping their hat (was that there before?).
+  - You take the bus, and decide to get off at the first stop.
+  - You take the bus, and decide to get off at the first stop.
   names:
   - Me
   - Me
@@ -818,7 +811,7 @@ MonoBehaviour:
   - Me
   - Me
   - Me
-  textSpeed: 0.1
+  textSpeed: 0.05
   index: 0
 --- !u!114 &1408500273
 MonoBehaviour:
