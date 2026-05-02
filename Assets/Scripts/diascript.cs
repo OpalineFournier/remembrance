@@ -38,6 +38,10 @@ public class diascript : MonoBehaviour
             if (textComponent.text == lines[index])
             {
                 NextLine();
+                if(GameObject.Find("BlinkingSquare"))
+                {
+                    GameObject.Find("BlinkingSquare").GetComponent<blinkingscript>().blink();
+                }
             }
             else
             {
