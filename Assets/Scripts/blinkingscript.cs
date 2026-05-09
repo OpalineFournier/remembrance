@@ -34,6 +34,8 @@ public class blinkingscript : MonoBehaviour
                 if(box.GetComponent<SpriteRenderer>().color.a >= .99f)
                 {
                     eyesclosed = true;
+                    GameObject.Find("BeginningCutscene_Polished").GetComponent<SpriteSwitcher>().runswitch();
+                    yield return new WaitForSeconds(.5f);
                 }
                 yield return new WaitForSeconds(.03f);
             }
