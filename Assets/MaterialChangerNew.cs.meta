@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a6a50954c5b400e4283a8e70db160f36
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - materialOne: {fileID: 2100000, guid: b608fdfc8d5a61049815121d8f071da7, type: 2}
+  - materialTwo: {fileID: 2100000, guid: c5761ba71b2785c4cb33203845ab2308, type: 2}
+  - materialThree: {fileID: 2100000, guid: eab7d48d302577a4492612655d5f678f, type: 2}
+  - materialFour: {fileID: 2100000, guid: c0a02c223b685b84481e1201c607b537, type: 2}
+  - materialFive: {fileID: 2100000, guid: 40292cdd1cba6f748bef99801120cd0d, type: 2}
+  - materialSix: {fileID: 2100000, guid: cf6ddba04c81b9a488578b9068ef6949, type: 2}
+  - materialSeven: {fileID: 2100000, guid: f28163fa994cdf84ba21a34cae563a6e, type: 2}
+  - materialEight: {fileID: 2100000, guid: 0680765648ee48d4ca0c1ea188018c62, type: 2}
+  - materialNine: {fileID: 2100000, guid: ff78e65b9d6c2534a8abab42255b3845, type: 2}
+  - materialTen: {fileID: 2100000, guid: 4d88f8d1651950d48869a67154dde13e, type: 2}
+  - materialEleven: {fileID: 2100000, guid: e966eda92397e7e44bf136d5052b5f0f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
