@@ -13,7 +13,7 @@ public class SpriteSwitcher : MonoBehaviour
     }
     public changewithspriteatindex[] changewithspriteAatindexA;
     
-    public int activeindex;
+    public int indexcount;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,16 +23,25 @@ public class SpriteSwitcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("BlinkingSquare").GetComponent<blinkingscript>().eyesclosed)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = this.gameObject.GetComponent<SpriteSwitcher>().changewithspriteAatindexA[activeindex].sprites;
-            if(changewithspriteAatindexA[activeindex].scalesize != new Vector3(0f, 0f, 0f))
-            {
-                this.gameObject.transform.localScale = changewithspriteAatindexA[activeindex].scalesize;
-            }
-
-        }
-        
+        indexcount = GameObject.Find("DIalouge Box").GetComponent<diascript>().index;
     }
-
+    public void runswitch()
+    {
+        for(int i  = 0; i < changewithspriteAatindexA.Length; i++)
+        {
+            if(indexcount == changewithspriteAatindexA[i].index)
+            {
+                
+                if(GameObject.Find("BlinkingSquare").GetComponent<blinkingscript>().eyesclosed)
+                {
+                    Debug.Log(i);
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = changewithspriteAatindexA[i].sprites;
+                    if(changewithspriteAatindexA[i].scalesize != new Vector3(0f, 0f, 0f))
+                    {
+                        this.gameObject.transform.localScale = changewithspriteAatindexA[i].scalesize;
+                    }
+                }
+            }
+        }
+    }
 }
