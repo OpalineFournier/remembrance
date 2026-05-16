@@ -770,8 +770,14 @@ MonoBehaviour:
   nameComponent: {fileID: 809181773}
   lines:
   - This place is disgusting.....
-  - I need to get out of here.
+  - I.. I can't.. I caN'T.
+  - (Every cell in your body just screams for you to get out of this place.)
+  - (And you listen. You run.. and run..and run until you end up back at where you
+    began.)
+  - (At the place where it all started.)
   names:
+  - Me
+  - Me
   - Me
   - Me
   textSpeed: 0.1
