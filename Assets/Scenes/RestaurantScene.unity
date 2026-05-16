@@ -1026,7 +1026,7 @@ MonoBehaviour:
   changewithspriteAatindexA:
   - sprites: {fileID: 21300000, guid: 21bb173ffc84b874aacd9a449acb598c, type: 3}
     index: 3
-    scalesize: {x: 4, y: 3.6, z: 3.8}
+    scalesize: {x: 1, y: 1, z: 0}
   - sprites: {fileID: 21300000, guid: 399bd8a414221e04aa2c54affc587d2f, type: 3}
     index: 4
     scalesize: {x: 0, y: 0, z: 0}
@@ -1041,7 +1041,7 @@ MonoBehaviour:
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: 9b7b5f1a46161e4478e1a87832ce2115, type: 3}
     index: 8
-    scalesize: {x: 3, y: 2.5, z: 2.8}
+    scalesize: {x: 0, y: 0, z: 0}
   indexcount: 0
 --- !u!212 &1506539193
 SpriteRenderer:
@@ -1084,7 +1084,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1c70931579706c6468deb408fbc791f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 21bb173ffc84b874aacd9a449acb598c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
