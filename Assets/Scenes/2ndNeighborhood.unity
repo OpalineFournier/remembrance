@@ -122,6 +122,90 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &82737548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82737549}
+  - component: {fileID: 82737550}
+  m_Layer: 0
+  m_Name: BusDriver_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82737549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82737548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0.006139996, y: 0.0105599975, z: 0.0009700009}
+  m_LocalScale: {x: 0.0002968716, y: 0.0006524079, z: 0.00051581726}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1747321319}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!212 &82737550
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82737548}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 880e5b080b018264aa7ab484df30f3cf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.8, y: 12.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &103328124
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +1055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 683fe0ec75e47644fbbffcd5a578052a, type: 3}
   source: {fileID: 0}
-  bustravelatindex: 8
+  bustravelatindex: 11
 --- !u!82 &315145489
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2789,15 +2873,17 @@ MonoBehaviour:
   textComponent: {fileID: 1928134230}
   nameComponent: {fileID: 1814185374}
   lines:
-  - Hi, where are we?
-  - trwgnbiqoer
-  - What??
-  - grgnjwrgn
-  - Do you know bus I should get on?
-  - "Oyxyxyx, zbu qxbzdulb, waz\u2019eh lnaar ghq masa qbc??"
-  - I can't understand you..
-  - '*Shrugs*'
-  - "Oyxyxyx, zbu qxbzdulb, waz\u2019eh lnaar ghq masa qbc..."
+  - Do you know what stop I should get off at?
+  - Zdu, Idrzc rc rknabz
+  - Do you know which bus I should get on?
+  - Wa hbdy qdsx ghhn lqx kt ntisbf oh zdos dpt qa lhq abn!
+  - "I can\u2019t understand you."
+  - Gkrb!!!! Qh qa esq 83, Brgbt pq gkoilex sm imnas mg qhumnw
+  - (You stare in confusion)
+  - (He scoffs, pointing to the road)
+  - (Was he wearing that hoodie before?)
+  - '(Even so.. something tells you to walk to that restaurant.. It stirs feelings
+    in you that you were sure had been forgotten.) '
   names:
   - You
   - ???
@@ -2808,6 +2894,8 @@ MonoBehaviour:
   - You
   - ???
   - ???
+  - '(Even so.. something tells you to walk to that restaurant.. It stirs feelings
+    in you that you were sure had been forgotten.) '
   textSpeed: 0.1
   index: 0
 --- !u!114 &970473954
@@ -5005,6 +5093,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4951313197634599001, guid: cec0656bd8a4c3442893916b090b30ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1037476379}
+    - targetCorrespondingSourceObject: {fileID: 4951313197634599001, guid: cec0656bd8a4c3442893916b090b30ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 82737549}
     - targetCorrespondingSourceObject: {fileID: 7966830834423475658, guid: cec0656bd8a4c3442893916b090b30ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1131453205}
@@ -6374,6 +6465,9 @@ MonoBehaviour:
   - Gkrb!!!! Qh qa esq 83, Brgbt pq gkoilex sm imnas mg qhumnw
   - What stop should I get off at?
   - '*Points at map*'
+  - (Was he wearing that hoodie a moment ago??)
+  - '(Even so.. something tells you to walk to that restaurant.. It stirs feelings
+    in you that you were sure had been forgotten.) '
   names:
   - You
   - ???
@@ -6383,7 +6477,10 @@ MonoBehaviour:
   - ???
   - You
   - ???
+  - You
   - ???
+  - You
+  - You
   textSpeed: 0.1
   index: 0
 --- !u!114 &2065670318
