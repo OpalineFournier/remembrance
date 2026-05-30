@@ -911,48 +911,37 @@ MonoBehaviour:
   textComponent: {fileID: 416522477}
   nameComponent: {fileID: 1159196540}
   lines:
-  - It's dark.
-  - Now it's too bright.
-  - Your eyes don't hurt anymore.
-  - The smell of a burning cigarette interrupted your subpar slumber.
-  - Looking around, you are sitting on a bench at a bus stop. There is another person
-    there.
-  - 'Walking towards the person, you can see them avoid eye contact. '
-  - 'You try to spark some interesting conversation, but their response sounds like
-    gibberish. '
-  - 'Trying to make out what you heard, you feel something in your pocket, like a
-    piece of paper. '
-  - After unfolding the paper, you can see that it is also unintelligible.
-  - Handing them the note, they begin to read, and their expression changes to pity.
-  - 'Handing it back to you, saying some more gibberish, they point to something
-    out of view. '
-  - They were pointing to the sign for the bus stop, which has a variety of numbers.
-  - They hold up one finger and wave goodbye, tipping their hat (was that there before?).
-  - You take the bus, and decide to get off at the first stop.
+  - Keep your eyes closed.. Closed!
+  - How much longer??
+  - Open now!
+  - Happy Birthday to you!
+  - "Wow.. I\u2019m so happy I\u2019m here.. With my family.. With My Friends!"
+  - (Everyone smiles at him gently)
+  - Yes! Now eat up!
+  - "The cake looks sooo good and it\u2019s your favorite!"
+  - Yeah! Eat up bro!
+  - My favorite..?
+  - How old was I when..?
+  - 
+  - 
+  - 
+  - 
   names:
+  - ???
+  - Me
+  - ???
+  - ???
+  - ???
+  - 
+  - ???
+  - ???
+  - ???
   - Me
   - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
-  - Me
+  - 
+  - 
+  - 
+  - 
   textSpeed: 0.05
   index: 0
 --- !u!114 &1396636801
@@ -1025,22 +1014,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changewithspriteAatindexA:
   - sprites: {fileID: 21300000, guid: 21bb173ffc84b874aacd9a449acb598c, type: 3}
-    index: 3
+    index: 0
     scalesize: {x: 1, y: 1, z: 0}
   - sprites: {fileID: 21300000, guid: 399bd8a414221e04aa2c54affc587d2f, type: 3}
-    index: 4
+    index: 10
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: e3a5dffa66f61bd4dbd3ab3f368930f0, type: 3}
-    index: 5
+    index: 11
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: bcb1426fc187f9249bf047e7235a0ad1, type: 3}
-    index: 6
+    index: 12
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: cdd9f96215fb9cb4daae191ebddc4ecf, type: 3}
-    index: 7
+    index: 13
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: 9b7b5f1a46161e4478e1a87832ce2115, type: 3}
-    index: 8
+    index: 14
     scalesize: {x: 0, y: 0, z: 0}
   indexcount: 0
 --- !u!212 &1506539193
@@ -1105,7 +1094,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 4, y: 3.5, z: 3.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
