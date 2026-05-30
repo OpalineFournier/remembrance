@@ -922,10 +922,6 @@ MonoBehaviour:
   - Yeah! Eat up bro!
   - My favorite..?
   - How old was I when..?
-  - 
-  - 
-  - 
-  - 
   names:
   - ???
   - Me
@@ -938,10 +934,6 @@ MonoBehaviour:
   - ???
   - Me
   - Me
-  - 
-  - 
-  - 
-  - 
   textSpeed: 0.05
   index: 0
 --- !u!114 &1396636801
@@ -1017,19 +1009,19 @@ MonoBehaviour:
     index: 0
     scalesize: {x: 1, y: 1, z: 0}
   - sprites: {fileID: 21300000, guid: 399bd8a414221e04aa2c54affc587d2f, type: 3}
-    index: 10
+    index: 6
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: e3a5dffa66f61bd4dbd3ab3f368930f0, type: 3}
-    index: 11
+    index: 7
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: bcb1426fc187f9249bf047e7235a0ad1, type: 3}
-    index: 12
+    index: 8
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: cdd9f96215fb9cb4daae191ebddc4ecf, type: 3}
-    index: 13
+    index: 9
     scalesize: {x: 0, y: 0, z: 0}
   - sprites: {fileID: 21300000, guid: 9b7b5f1a46161e4478e1a87832ce2115, type: 3}
-    index: 14
+    index: 10
     scalesize: {x: 0, y: 0, z: 0}
   indexcount: 0
 --- !u!212 &1506539193
